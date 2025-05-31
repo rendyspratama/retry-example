@@ -2,6 +2,10 @@
 
 A simple and flexible retry mechanism for Go applications. This package provides a configurable retry mechanism with features like exponential backoff, maximum delay, and custom retry conditions.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Features
 
 - Configurable number of attempts
@@ -42,10 +46,6 @@ err := retry.Do(context.Background(), cfg, op)
 - `Factor`: Multiplier for delay after each attempt
 - `Jitter`: Whether to add random jitter to delays
 - `IsRetryable`: Function to determine if an error is retryable
-
-## License
-
-MIT
 
 ## Features Implemented
 
